@@ -1,0 +1,40 @@
+input[type=url]{
+	width: 360px;
+	padding: 5px 5px;
+	display: inline-block;
+	border: 1px solid  #003732;
+	border-radius: 3px;
+	font-size: 16;
+}
+input[type=submit]{
+	padding: 5px 15px;
+	display: inline-block;
+	background-color: #003732;
+	border: 1px solid #003732;
+	border-radius: 6px;
+	box-sizing: border-box;
+	color: white;
+	font-weight: bold;
+	font-size: 16;
+}
+#url-form-submit:hover{
+	background-color: #006e64;
+	border: 1px solid #006e64;
+}
+#top-header{
+	background-color: #003732;
+	color: white;
+	padding: 20px 0;
+}
+#graph-container{
+	height: 500px;
+}
+#server-close-button{
+	padding: 8px;
+	width: 100%;
+}
+#server-close-button:hover{
+	background-color: #fe0107;
+	border-color: #fe0107;
+	color: black;
+}

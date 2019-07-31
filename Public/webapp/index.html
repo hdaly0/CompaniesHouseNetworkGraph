@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Companies House Network Graphing</title>
+
+	<!-- Import .css stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body style="text-align: center; font-family: Arial">
+	<h1 id="top-header">Companies House Network Graphing</h1>
+	
+	<!-- Form to submit starting companies house URL -->
+	<form action="/new-url-submit/" method="get" id="new-url-form">
+		Companies House URL:
+		<input type="url" name="company-url" placeholder="https://beta.companieshouse.gov.uk/company/......">
+		<input type="submit" name="url-submit-button" id="url-form-submit"/>
+
+	</form>
+
+	<!-- If using svg tags, must NOT be inside canvas tags! Use one or the other! They are not compatible - svg inside a canvas does not display at all. -->
+	<div id="graph-canvas">
+		<!-- Network Graph goes here -->
+	</div>
+
+	<form action="/close">
+		<input type="submit" name="server-close-button" value="Close Server" id="server-close-button"/>
+	</form>
+
+</body>
+
+<!-- Scripts at the end... -->
+<!-- Import .js dependencies and required files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="app.js"></script>
+
+</html>
